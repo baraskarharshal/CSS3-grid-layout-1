@@ -1,0 +1,69 @@
+body {
+  background: white;
+  font-family: sans-serif;
+}
+
+.grid-container {
+  display: grid;
+  width: 50%;
+  height: 150%;
+  margin-left: 25%;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.grid-container div {
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+}
+
+.header {
+  grid-column: 1/11;
+  background: #51cde2;
+}
+
+.hero {
+  grid-column: 1 / span 4;
+  grid-row: 2 / span 3;
+  background: #cfc1da;
+}
+
+.main-content {
+  grid-column: 5 / span 6;
+  grid-row: 2 / span 5;
+  background: #ebbe30;
+}
+
+.sidebar {
+  grid-column: 1 / span 4;
+  grid-row: 5 / span 4;
+  background: #99bb5f;
+}
+
+.extra-content {
+  grid-column: 5 / span 6;
+  grid-row: 7 / span 2;
+  background: #848484;
+}
+
+.related-images {
+  grid-column: 1 / span 7;
+  grid-row: 9 / span 2;
+  background: #29af6e;
+}
+
+.related-posts {
+  grid-column: 8 / span 3;
+  grid-row: 9 / span 2;
+  background: #ebc4d5;
+}
+
+.footer {
+  grid-column: 1 / span 10;
+  grid-row: 11;
+  background: #f49f00;
+}
